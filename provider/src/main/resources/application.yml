@@ -1,0 +1,11 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: provider #此微服务在注册中心的名字
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  #要注册的注册中心的地址
+  instance:
+    prefer-ip-address: true                       #是否将当前服务的ip注册到注册中心
